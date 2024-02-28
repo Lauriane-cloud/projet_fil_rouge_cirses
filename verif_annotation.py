@@ -1,12 +1,10 @@
 
 import re
 import numpy as np
-import matplotlib.pyplot as plt
 from change_hue import change_hue
 #from annotation import move_positive_image,move_negative_image,move_cirse_et_autre_image,move_a_verifier
 
 import os
-import shutil
 import cv2
 from pathlib import Path
 
