@@ -33,8 +33,8 @@ for filename in image_files:
         output_name = f"{os.path.splitext(filename)[0]}_rotated_90.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), rotated_image)
 
-        # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+       # Bruit gaussien
+        white_noise_image = ajouter_bruit_gaussien(rotated_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_90_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
@@ -44,7 +44,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), mirrored_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(mirrored_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_90_mirrored_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
@@ -54,7 +54,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), rotated_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(rotated_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_180_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
@@ -64,7 +64,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), mirrored_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(mirrored_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_180_mirrored_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
@@ -73,7 +73,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), rotated_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(rotated_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_270_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
@@ -83,7 +83,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), mirrored_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(mirrored_image)
         output_name = f"{os.path.splitext(filename)[0]}_rotated_270_mirrored_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
         
@@ -93,7 +93,7 @@ for filename in image_files:
         cv2.imwrite(os.path.join(output_directory, output_name), mirrored_image)
 
         # Bruit gaussien
-        white_noise_image = ajouter_bruit_gaussien(image)
+        white_noise_image = ajouter_bruit_gaussien(mirrored_image)
         output_name = f"{os.path.splitext(filename)[0]}_white_noise.jpg"
         cv2.imwrite(os.path.join(output_directory, output_name), white_noise_image)
 
