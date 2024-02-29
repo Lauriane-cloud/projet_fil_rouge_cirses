@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 
-def ajouter_bruit_gaussien(image, mean=0, sigma=25):
+def ajouter_bruit_gaussien(image, mean=0, sigma=1):
     """Ajoute du bruit gaussien à une image."""
     row, col, ch = image.shape
     gauss = np.random.normal(mean, sigma, (row, col, ch))
